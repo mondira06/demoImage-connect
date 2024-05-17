@@ -4,7 +4,7 @@ function ImageApi() {
   const [images, setImages] = useState([]);
   useEffect(() => {
     axios
-      .get("https://skbm55g7-3000.inc1.devtunnels.ms/image")
+      .get("https://backend-repo-i7xh.onrender.com/image")
       .then((res) => {
         console.log("------>", res.data.images);
         const images = res.data.images;
